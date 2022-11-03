@@ -57,19 +57,25 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Tools Surfboards</a></h1>
+      <!-- <h1 class="logo"><a href="index.html">Tools Surfboards</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <a href="index.html" class="logo"><img src="assets/img/logo-tools.png" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Models</a></li>
+          <li class="dropdown"><a href="#portfolio"><span>Models</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="portfolio-details.html">Mini Simmons</a></li>
+              <li><a href="maquereau-details.html">El Maquereau</a></li>
+            </ul>
+          </li>
           <li><a class="nav-link scrollto " href="#portfolio">Gallery</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Customs</a></li>
           <li><a class="nav-link scrollto" href="#team">Merchs</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -285,7 +291,6 @@
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">El Maquereau</li>
               <li data-filter=".filter-card">Mini Simmons</li>
-              <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
         </div>
@@ -293,94 +298,137 @@
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="150">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <a href="maquereau-details.html">
+              <img src="assets/img/portfolio/maquereau_1.JPG" class="img-fluid" alt="">
+            </a>
             <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>El Maquereau</h4>
+              <p>The performance board for small waves.</p>
+              <a href="assets/img/portfolio/maquereau_1.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Gallery mode"><i class="bx bx-right-arrow"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <a href="portfolio-details.html">
+            <img src="assets/img/portfolio/Mini-Simmons.jpg" class="img-fluid" alt="">
+            </a>
+            <div class="portfolio-info">
+              <h4>Mini-Simmons</h4>
+              <p>The performance board for small waves</p>
+              <a href="assets/img/portfolio/Mini-Simmons.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Mini-Simmons"><i class="bx bx-right-arrow"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <a href="maquereau-details.html">
+            <img src="assets/img/portfolio/maquereau_2.jpg" class="img-fluid" alt="">
+            </a>
+            <div class="portfolio-info">
+              <h4>El Maquereau</h4>
+              <p>The performance board for small waves.</p>
+              <a href="assets/img/portfolio/maquereau_2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="El Maquereau"><i class="bx bx-right-arrow"></i></a>
+              <a href="maquereau-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Card 2</h4>
               <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-right-arrow"></i></a>
+              <a href="maquereau-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Web 2</h4>
               <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-right-arrow"></i></a>
+              <a href="maquereau-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div> -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/maquereau_3.JPG" class="img-fluid"" alt="">
+            <div class="portfolio-info">
+              <h4>El Maquereau</h4>
+              <p>The performance board for small waves.</p>
+              <a href="assets/img/portfolio/maquereau_3.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="El Maquereau"><i class="bx bx-right-arrow"></i></a>
+              <a href="maquereau-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/maquereau_4.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>El Maquereau</h4>
+              <p>The performance board for small waves.</p>
+              <a href="assets/img/portfolio/maquereau_4.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="El Maquereau"><i class="bx bx-right-arrow"></i></a>
+              <a href="maquereau-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/maquereau_5.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>El Maquereau</h4>
+              <p>The performance board for small waves.</p>
+              <a href="assets/img/portfolio/maquereau_5.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="El Maquereau"><i class="bx bx-right-arrow"></i></a>
+              <a href="maquereau-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/maquereau_6.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>El Maquereau</h4>
+              <p>The performance board for small waves.</p>
+              <a href="assets/img/portfolio/maquereau_6.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="El Maquereau"><i class="bx bx-right-arrow"></i></a>
+              <a href="maquereau-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/maquereau_7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>El Maquereau</h4>
+              <p>The performance board for small waves.</p>
+              <a href="assets/img/portfolio/maquereau_7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="El Maquereau"><i class="bx bx-right-arrow"></i></a>
+              <a href="maquereau-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/maquereau_8.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>El Maquereau</h4>
+              <p>The performance board for small waves.</p>
+              <a href="assets/img/portfolio/maquereau_8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="El Maquereau"><i class="bx bx-right-arrow"></i></a>
+              <a href="maquereau-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Card 1</h4>
               <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-right-arrow"></i></a>
+              <a href="maquereau-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Card 3</h4>
               <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-right-arrow"></i></a>
+              <a href="maquereau-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
+          </div> -->
 
         </div>
 
