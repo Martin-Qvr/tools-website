@@ -125,21 +125,21 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #191919;
+  background: #f3f2f2;
   font-size: 15px;
   height: 40px;
   padding: 0;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 #topbar .contact-info a {
   line-height: 0;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   transition: 0.3s;
 }
 
 #topbar .contact-info a:hover {
-  color: #fff;
+  color: rgb(4, 42, 116);
 }
 
 #topbar .contact-info i {
@@ -153,7 +153,7 @@ h6 {
 }
 
 #topbar .social-links a {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   padding: 4px 12px;
   display: inline-block;
   line-height: 1px;
@@ -161,21 +161,21 @@ h6 {
 }
 
 #topbar .social-links a:hover {
-  color: #fff;
+  color: rgb(4, 42, 116);
 }
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(25, 25, 25, 0.95);
+  background: ffffff;
   transition: all 0.5s;
   z-index: 997;
   height: 70px;
 }
 
 #header.fixed-top {
-  background: #191919;
+  background: #ffffff;
 }
 
 #header .logo {
@@ -189,7 +189,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 #header .logo img {
@@ -233,7 +233,7 @@ h6 {
   justify-content: space-between;
   padding: 25px 15px 24px 15px;
   font-size: 14px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   white-space: nowrap;
   transition: 0.3s;
 }
