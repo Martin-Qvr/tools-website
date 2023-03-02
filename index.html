@@ -110,74 +110,32 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-
-            <style>
-              .slider {
-                width: 500px;
-                height: 300px;
-                background-color: yellow;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 0px;
-                text-align: center;
-                overflow: hidden;
-              }
-              .image-container {
-                width: 1500px;
-                background-color: pink;
-                height: 300px;
-                clear: both;
-                position: relative;
-                -webkit-transition: left 2s;
-                -moz-transition: left 2s;
-                -o-transition: left 2s;
-                transition: left 2s;
-              }
-              .slide {
-                float: left;
-                margin: 0px;
-                padding: 0px;
-                position: relative;
-              }
-              #slide-1:target ~ .image-container {
-                left: 0px;
-              }
-              #slide-2:target ~ .image-container {
-                left: -500px;
-              }
-              #slide-3:target ~ .image-container {
-                left: -1000px;
-              }
-              .buttons {
-                position: relative;
-                top: -20px;
-              }
-              .buttons a {
-                display: inline-block;
-                height: 15px;
-                width: 15px;
-                border-radius: 50px;
-                background-color: rgb(136, 136, 136);
-              }
-            </style>
-          </head>
-          <body>
-            <div class="slider">
-              <span id="slide-1"></span>
-              <span id="slide-2"></span>
-              <span id="slide-3"></span>
-              <div class="image-container">
-                <img src="assets/img/about.jpg" class="slide" width="500" height="300" />
-                <img src="assets/img/about_2.jpg" class="slide" width="500" height="300" />
-                <img src="assets/img/about_3.jpg" class="slide" width="500" height="300" />
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
-              <div class="buttons">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/img/about.jpg" class="d-block w-100" alt="assets/img/about.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/about_2.jpg" class="d-block w-100" alt="assets/img/about_2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/about_3.jpg" class="d-block w-100" alt="assets/img/about_.jpg">
+                </div>
               </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-          </body>
           <!-- TO DO :  Slider sur la photo -->
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
@@ -376,15 +334,15 @@
       
     <style>
       .carousel-caption {
-      opacity: 0;
+      opacity: 1;
       -webkit-transition: all 0.4s;
       transition: all 0.4s;
       color: #fff;
     }
 
-  .carousel-item:hover .carousel-caption {
+  /* .carousel-item:hover .carousel-caption {
     opacity: 1;
-  }
+  } */
 
   .carousel-item {
   height: 550px;
@@ -396,41 +354,46 @@
 
   
     </style>
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
+      <a href="classic-fish.html">
       <img class="d-block w-100" src="assets/img/customs/Classic Fish/classic_fish1.jpg" alt="First slide">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption">
         <h1>Classic Fish</h1>
         <p>Des fish retro pour casser le spot avec style</p>
       </div>
-    
+      </a>
     </div>
     <div class="carousel-item">
+      <a href="longboard.html"> 
       <img class="d-block w-100" src="assets/img/customs/longboard/longboard1.jpg" alt="Second slide">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption">
         <h1>Longboard</h1>
         <p>Des longboard customs pour ... </p>
       </div>
+      </a>
     </div>
     <div class="carousel-item">
+      <a href="mid-length.html"> 
       <img class="d-block w-100" src="assets/img/customs/Mid lenght/mid-lenght1.jpg" alt="Third slide">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption">
         <h1>Mid-length</h1>
         <p>A toi de jouer</p>
       </div>
+      </a>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
