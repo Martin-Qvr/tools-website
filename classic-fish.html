@@ -109,74 +109,36 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-
-            <style>
-              .slider {
-                width: 500px;
-                height: 300px;
-                background-color: yellow;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 0px;
-                text-align: center;
-                overflow: hidden;
-              }
-              .image-container {
-                width: 1500px;
-                background-color: pink;
-                height: 300px;
-                clear: both;
-                position: relative;
-                -webkit-transition: left 2s;
-                -moz-transition: left 2s;
-                -o-transition: left 2s;
-                transition: left 2s;
-              }
-              .slide {
-                float: left;
-                margin: 0px;
-                padding: 0px;
-                position: relative;
-              }
-              #slide-1:target ~ .image-container {
-                left: 0px;
-              }
-              #slide-2:target ~ .image-container {
-                left: -500px;
-              }
-              #slide-3:target ~ .image-container {
-                left: -1000px;
-              }
-              .buttons {
-                position: relative;
-                top: -20px;
-              }
-              .buttons a {
-                display: inline-block;
-                height: 15px;
-                width: 15px;
-                border-radius: 50px;
-                background-color: rgb(238, 153, 144);
-              }
-            </style>
           </head>
-          <body>
-            <div class="slider">
-              <span id="slide-1"></span>
-              <span id="slide-2"></span>
-              <span id="slide-3"></span>
-              <div class="image-container">
-                <img src="assets/img/about.jpg" class="slide" width="500" height="300" />
-                <img src="assets/img/about_2.jpg" class="slide" width="500" height="300" />
-                <img src="assets/img/about_3.jpg" class="slide" width="500" height="300" />
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/customs/Classic Fish/classic_fish1.jpg" class="d-block w-100 h-100" alt="assets/img/customs/Classic Fish/classic_fish1.jpg">
               </div>
-              <div class="buttons">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
+              <div class="carousel-item">
+                <img src="assets/img/customs/Classic Fish/classic_fish2.jpg" class="d-block w-100 h-100" alt="assets/img/customs/Classic Fish/classic_fish2.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/customs/Classic Fish/classic_fish3.jpg" class="d-block w-100 h-100" alt="assets/img/customs/Classic Fish/classic_fish3.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/customs/Classic Fish/classic_fish4.jpg" class="d-block w-100 h-100" alt="assets/img/customs/Classic Fish/classic_fish4.jpg">
               </div>
             </div>
-          </body>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
           <!-- TO DO :  Slider sur la photo -->
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
