@@ -168,14 +168,14 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: ffffff;
+  background: #e3e2e2;
   transition: all 0.5s;
   z-index: 997;
   height: 70px;
 }
 
 #header.fixed-top {
-  background: #ffffff;
+  background: #e3e2e2;
 }
 
 #header .logo {
@@ -207,6 +207,7 @@ h6 {
 * Desktop Navigation 
 */
 .navbar {
+  font-family: Cardo serif !important;
   padding: 0;
 }
 
@@ -232,7 +233,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 25px 15px 24px 15px;
-  font-size: 14px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
   white-space: nowrap;
   transition: 0.3s;
