@@ -1316,6 +1316,38 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Table customs
+--------------------------------------------------------------*/
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+        .styled-table th,
+        .styled-table td {
+            padding: 9px 15px;
+        }
+        .styled-table thead tr {
+            background-color: #919191;
+            color: #000000;
+            text-align: left;
+        }
+          .styled-table .active-row {
+            font-style: bold;
+          }
+
+          .styled-table tbody tr {
+              border-bottom: 1px solid #dddddd;
+          }
+
+          .styled-table tbody tr:nth-of-type(even) {
+              background-color: #f3f3f3;
+          }
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
