@@ -94,15 +94,36 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/HcpIZ8ZrGi8?&autoplay=1&loop=1&mute=1&playsinline=1&playlist=HcpIZ8ZrGi8"></iframe>
-    </div> 
-    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+    <div id="player"></div>
 
-      </video>
-      <!-- <h1>Welcome at Tools Surfboards</h1>
-      <h2>Hand-shaped water blades, made in Vendée.</h2> -->
-    </div>
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+    
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          videoId: 'HcpIZ8ZrGi8',
+          playerVars: { 'autoplay': 1, 'playsinline': 1 },
+          events: {
+            'onReady': onPlayerReady
+          }
+        });
+      }
+    
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+         event.target.mute();
+        event.target.playVideo();
+      }
+    </script>
+    
   </section><!-- End Hero -->
 
   <main id="main">
