@@ -1512,3 +1512,21 @@ section {
 .carousel-item {
   height: 500px;
 }
+
+.paperform {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding as desired */
+  border-radius: 8px; /* Adjust border radius as desired */
+  background-color: #378bc4; /* Adjust background color as desired */
+  color: #fff; /* Adjust text color as desired */
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border-style: none;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; /* Adjust height as desired */
+}
