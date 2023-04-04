@@ -977,6 +977,7 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+  text-justify: auto;
 }
 
 /*--------------------------------------------------------------
