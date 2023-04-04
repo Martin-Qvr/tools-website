@@ -1521,7 +1521,6 @@ section {
   color: #fff; /* Adjust text color as desired */
   text-align: center;
   cursor: pointer;
-  outline: none;
   border-style: none;
 }
 .button-container {
